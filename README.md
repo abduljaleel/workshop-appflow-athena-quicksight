@@ -2,6 +2,10 @@
 
 ## Introduction to AWS Appflow, Athena and Quicksight
 
+*   Amazon AppFlow is a fully managed integration service that helps to transfer SaaS data to your data lake securely.
+*   Amazon Athena is the Amazon Web Services (AWS) service that allows to directly query files stored in S3 using SQL.
+*   Amazon Quicksight is an AWS dashboarding service. It has a user-friendly drag and drop interface to create charts and full dashboards in less than an hour.
+
 ## Setting up your Development Environment
 
 ### AWS Account
@@ -16,5 +20,4 @@ Once you have AWS & Slack accounts, you can start the workshop.
 
 \## Cleanup
 
-At the end of everyworkshop, you may wish to cleanup the stuff you have created  
-so you do not incurr additional costs.
+At the end of everyworkshop, you may wish to cleanup the stuff you have created so you do not incurr additional costs.
