@@ -22,7 +22,7 @@ Once you have AWS & Slack accounts, you can start the workshop.
 
 In this workshop, you will be integrating Slack with Amazon Appflow and transferring data from Slack to S3 bucket.  In the next stage, create Amazon Athena table and query the data using SQL.  In the final stage of the workshop, you will be creating charts in Amazon Quicksight.
 
-!\[Architecture\](/images/APT-slack-appflow-demo.png)
+!\[Architecture\](https://github.com/abduljaleel/workshop-appflow-athena-quicksight/blob/main/images/APT-slack-appflow-demo.png)
 
 \## Cleanup
 
