@@ -10,9 +10,9 @@ In order to complete this workshop, you’ll need access to an AWS account. Your
 
 ### Slack Account
 
-You'll need a slack account and a workspace to install the Slack app that we are creating as part of this workshop. You may not have Slack app install permissions for a workspace that you have joined unless the administrator has turned on the permissions. 
+You'll need a slack account and a workspace to install the Slack app that we are creating as part of this workshop. You may not have Slack app install permissions for a workspace that you have joined unless the administrator has turned on the permissions. So please have a workspace ready to install the Slack app. 
 
-Once you have AWS & Slack account, you can start the workshop.
+Once you have AWS & Slack accounts, you can start the workshop.
 
 \## Cleanup
 
