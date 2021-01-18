@@ -89,7 +89,7 @@ In this step, you will create a slack app by following below instuctions:
 
 ## Connect Slack to Appflow and Create the flow
 
-*   Open the Amazon AppFlow console at
+*   Open the Amazon AppFlow console [here](https://console.aws.amazon.com/appflow/)
 *   Choose **Create flow** named 'APTWorkshopAppflow'
 *   For **Flow details**, enter a name and description for the flow. Leave other fields as default.
 *   Choose **Next**.
@@ -119,6 +119,24 @@ In this step, you will create a slack app by following below instuctions:
 *   This will create the flow named ' 'APTWorkshopAppflow'
 
 ![image](images/appflow-created.png)
+
+## Run the Appflow
+
+*   Click on 'Run flow' to run the appflow you just created 
+*   Once the flow is executed succesfully, data can be viewed from the S3 URL given in the notification window.
+
+![image](images/appflow-result.png)
+
+Note:  You can explore the data using Amazon Athena in the next section of the workshop
+
+## Create Athena Table 
+
+*   Open the Amazon Athena console [here](https://console.aws.amazon.com/athena/)
+
+
+## Query Data in S3
+
+
 
 ## Cleanup
 
