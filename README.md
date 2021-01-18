@@ -65,14 +65,14 @@ Note :  In addition to the above two S3 buckets, as part of this workshop when y
 
 In this step, you will create a slack app by following below instuctions:
 
-*   Sign in to your Slack workspace where you’d like to install the new app, or \[create a new workspace\](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace.  
+*   Sign in to your Slack workspace where you’d like to install the new app, or [create a new workspace](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace.  
 *   Create a Slack app from [here](https://api.slack.com/docs/sign-in-with-slack#sign-in-with-slack__details__create-your-slack-app-if-you-havent-already)
 
 ![image](images/slack-app-new.png)
 
 *   Select the workspace where you want to install the app.
 *   After you create the app, in the navigation pane, under Features, choose OAuth & Permissions.
-*   For Redirect URLs, enter ap-southeast-2.console.aws.amazon.com/appflow/oauth and save.
+*   For Redirect URL, enter ap-southeast-2.console.aws.amazon.com/appflow/oauth and save.
 
 ![image](images/slack-oath.png)
 
@@ -115,7 +115,7 @@ Note: As the format of the messages to be consistent, copy paste the messages to
 ## Connect Slack to Appflow and Create the flow
 
 *   Open the Amazon AppFlow console [here](https://console.aws.amazon.com/appflow/)
-*   Choose **Create flow** named 'APTWorkshopAppflow'
+*   Choose **Create flow** name 
 *   For **Flow details**, enter a name and description for the flow. Leave other fields as default.
 *   Choose **Next**.
 *   Choose **Slack** from the **Source name** dropdown list.
@@ -130,7 +130,7 @@ Note: As the format of the messages to be consistent, copy paste the messages to
 ![image](images/slack-connect.png)
 
 *   In the next screen, configure source (Slack) and destination (Amazon S3)
-*   Select the S3 bucket from the list.  Note : This bucket was created in the premilinary step.
+*   Select the S3 bucket from the list.  Note : This bucket was created in the preliminary step.
 *   Leave the Flow Trigger option as 'run on demand'
 
 ![image](images/appflow-create.png)
@@ -145,9 +145,9 @@ Note: As the format of the messages to be consistent, copy paste the messages to
 
 ![image](images/appflow-created.png)
 
-## Run the Appflow
+## Run the AppFlow
 
-*   Click on 'Run flow' to run the appflow you just created
+*   Click on 'Run flow' to run the AppFlow you just created
 *   Once the flow is executed succesfully, data can be viewed from the S3 URL given in the notification window.
 
 ![image](images/appflow-result.png)
@@ -183,7 +183,7 @@ SELECT * FROM SLACK_DATA;
 
 ![image](images/athena-queryresults.png)
 
-*   Create a new table called 'SLACK\_DATA\_ANALYSIS' by running below query. This table will be used for Amazon Quicksight analysis
+*   Create a new table called 'SLACK_DATA_ANALYSIS' by running below query. This table will be used for Amazon Quicksight analysis
 
 ```sql
 CREATE TABLE IF NOT EXISTS SLACK_DATA_ANALYSIS
@@ -195,13 +195,13 @@ FROM
 WHERE
   text like '%Deploy%';
 ```
-This query will create a new table slack_data_analysis with new fields (evnironment, status) derived from the slack messages.
+This query will create a new table slack_data_analysis with new fields (evnironment, status) derived from slack_data table.
 
 *   Run a select query to view the contents of this new table
 
 ![image](images/athena-newtable.png)
 
-*   In the last stage of the workshop,  you will analyse the data in table SLACK\_DATA\_ANALYSIS and create Amazon Quicksight charts.
+*   In the last stage of the workshop,  you will analyse the data in table SLACK_DATA_ANALYSIS and create Amazon Quicksight charts.
 
 ## Create Amazon Quicksight Charts
 
@@ -226,7 +226,7 @@ This query will create a new table slack_data_analysis with new fields (evnironm
 
 ![image](images/Quicksight-s3.png)
 
-*   Check 'Athena' box
+*   Check 'Athena' box and when prompted, verify the S3 access permissions in the previous step. 
 
 ![image](images/Quicksight-s3-athena.png)
 
@@ -260,7 +260,7 @@ This query will create a new table slack_data_analysis with new fields (evnironm
 
 ## Cleanup
 
-At the end of every workshop, you may wish to clean up following resources you have created so you do not incur additional costs.
+At the end of the workshop, you may wish to clean up following resources you have created so you do not incur additional costs.
 
 *   S3 Buckets
 *   AppFlow flows
