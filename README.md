@@ -37,11 +37,13 @@ These S3 buckets must be created prior to starting the workshop.  
 
 ![image](images/s3-datalake.png)
 
-You can leave all the fields as default and set some tags as best practice.  Select region as Sydney and you can use the same region across all other resources in this workshop. 
+You can leave all the fields as default and add some tags as best practice.  Select region as Sydney and you can use the same region across all other resources in this workshop. 
 
-### Create S3 Bucket for storing slack data
+### Create S3 Bucket for saving Athena query results
 
 ![image](images/s3-athenaresults.png)
+
+You can leave all the fields as default and add some tags as best practice.  Select region as Sydney and you can use the same region across all other resources in this workshop. 
 
 ## Cleanup
 
