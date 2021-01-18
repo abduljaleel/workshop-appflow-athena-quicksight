@@ -14,7 +14,7 @@ In order to complete this workshop, you’ll need access to an AWS account. Your
 
 ### Slack Account
 
-You'll need a slack account and a workspace to install the Slack app that we are creating as part of this workshop. You may not have Slack app install permissions for a workspace that you have joined unless the administrator has turned on the permissions. You can create a workspace which has permission to install a Slack app. 
+You'll need a slack account and a workspace to install the Slack app that we are creating as part of this workshop. You may not have Slack app install permissions for a workspace that you have joined unless the administrator has turned on the permissions.
 
 If you do not have a Slack workspace, create a new workspace following instructions [here](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)
 
@@ -24,7 +24,7 @@ In this workshop, you will be integrating Slack with Amazon Appflow and transfer
 
 ![image](images/arch.png)
 
-You will be analysing messages that are created in Slack channel as part of CI/CD pipeline deployment notifications. 
+You will be analysing messages that are created in Slack channel as part of CI/CD pipeline deployment notifications.
 
 ## Preliminary Setup
 
@@ -122,9 +122,16 @@ In this step, you will create a slack app by following below instuctions:
 
 ![image](images/appflow-created.png)
 
-*   Go to Slack workspace and add below messages so that these messages can be analysed with Amazon Quicksight 
+*   Go to Slack workspace and add few messages so that these messages can be analysed with Amazon Quicksight
+*   In the last stage of the workshop, you will be analysing the Slack messages with Amazon Quicksight. This will be a usecase to analyse CI/CD deployment notification messages in Slack workspace. Add below messages as samples:
 
-
+```
+Deploy to Staging*** succeeded
+Deploy to Production succeeded
+Deploy to Staging*** failed
+Deploy to Staging*** succeeded
+Deploy to Production succeeded
+```
 
 ## Run the Appflow
 
@@ -143,12 +150,12 @@ Note: You can explore the data using Amazon Athena in the next section of the wo
 ![image](images/athena-createtable.png)
 
 *   In the next screen, choose a new database name and a table name
-*   Type the S3 bucket name that you created in priliminary step
+*   Type the S3 bucket name that you created in preliminary step
 
 ![image](images/athena-s3bucket.png)
 
 *   In Step 2, select JSON as the data format
-*   In Step 3, add user,text and ts fields manually (In real woerld use case, you can create the table using Amazon Glue to avoid the manual mapping of fields)
+*   In Step 3, add user, text and ts fields manually (In a real world use case, you can create the table using Amazon Glue to avoid the manual mapping of fields)
 
 ![image](images/athena-columns.png)
 
@@ -161,13 +168,12 @@ Note: You can explore the data using Amazon Athena in the next section of the wo
 ```sql
 SELECT * FROM SLACK_DATA;
 ```
+
 ![image](images/athena-queryresults.png)
 
-*   Create a new table called 'SLACK_DATA_ANALYSIS' by running below query
+*   Create a new table called 'SLACK\_DATA\_ANALYSIS' by running below query
 
-In the last stage of the workshop,  we will analyse the data in the new table SLACK_DATA_ANALYSIS to create charts based on the contents of the Slack messages. 
-
-
+In the last stage of the workshop,  we will analyse the data in the new table SLACK\_DATA\_ANALYSIS to create charts based on the contents of the Slack messages.
 
 ## Cleanup
 
