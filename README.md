@@ -51,6 +51,21 @@ You can leave all the fields as default and add some tags as best practice.  Sel
 
 Once these S3 buckets are created, you are ready to start the workshop.
 
+## Create a Slack App
+
+In this step, you will create a slack app by following below instuctions:
+
+- Go here and click on 'Create New App'
+
+![image](images/slack-app.png)
+
+- Create a new app 
+
+![image](images/slack-app-new.png)
+
+
+
+
 ## Cleanup
 
 At the end of every workshop, you may wish to clean up the stuff you have created so you do not incur additional costs.
