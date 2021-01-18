@@ -105,6 +105,8 @@ Deploy to Production succeeded
 Deploy to Staging*** failed
 Deploy to Staging*** succeeded
 Deploy to Production succeeded
+Deploy to Staging*** succeeded
+Deploy to Production succeeded
 ```
 Note: As the format of the messages to be consistent, copy paste the messages to the channel. 
 
