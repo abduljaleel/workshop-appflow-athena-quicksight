@@ -89,6 +89,16 @@ In this step, you will create a slack app by following below instuctions:
 
 ![image](images/slack-install.png)
 
+*   In the last stage of the workshop, you will be analysing the Slack messages with Amazon Quicksight.   Inorder to mock usecase (CI/CD deployment notification messages), post below messages in Slack workspace #general channel
+
+```
+Deploy to Staging*** succeeded
+Deploy to Production succeeded
+Deploy to Staging*** failed
+Deploy to Staging*** succeeded
+Deploy to Production succeeded
+```
+
 ## Connect Slack to Appflow and Create the flow
 
 *   Open the Amazon AppFlow console [here](https://console.aws.amazon.com/appflow/)
@@ -121,17 +131,6 @@ In this step, you will create a slack app by following below instuctions:
 *   This will create a new flow connecting Slack and S3
 
 ![image](images/appflow-created.png)
-
-*   Go to Slack workspace and add few messages so that these messages can be analysed with Amazon Quicksight
-*   In the last stage of the workshop, you will be analysing the Slack messages with Amazon Quicksight. This will be a usecase to analyse CI/CD deployment notification messages in Slack workspace. Add below messages as samples:
-
-```
-Deploy to Staging*** succeeded
-Deploy to Production succeeded
-Deploy to Staging*** failed
-Deploy to Staging*** succeeded
-Deploy to Production succeeded
-```
 
 ## Run the Appflow
 
@@ -173,7 +172,18 @@ SELECT * FROM SLACK_DATA;
 
 *   Create a new table called 'SLACK\_DATA\_ANALYSIS' by running below query
 
-In the last stage of the workshop,  we will analyse the data in the new table SLACK\_DATA\_ANALYSIS to create charts based on the contents of the Slack messages.
+```sql
+CREATE TABLE IF NOT EXISTS SLACK_DATA_ANALYSIS
+  AS
+SELECT
+  user,substr(text,11,10) as environment, substr(text,22,9) as status, ts
+FROM
+  SLACK_DATA
+WHERE
+  text like '%Deploy%';
+```
+
+*   In the last stage of the workshop,  you will analyse the data in table SLACK\_DATA\_ANALYSIS and create Amazon Quicksight charts.
 
 ## Cleanup
 
