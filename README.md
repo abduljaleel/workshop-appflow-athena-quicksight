@@ -107,10 +107,15 @@ In this step, you will create a slack app by following below instuctions:
 *   In the next screen, configure source (Slack) and destination (Amazon S3)
 *   Select the S3 bucket 'aptworkshop-datalake' from the list.  This bucket was created in the premilinary step.
 *   Leave the Flow Trigger option as 'run on demand'
+
+![image](images/appflow-create.png)
+
 *   In the next screen, select 'All map all fields directly' from 'Source field name' dropdown under '**Source to destination field mapping'**
 *   Skip the Filters selection in the next screen and click 'Next'
 *   Click 'Create flow' in the 'Review and Create' screen
 *   This will create the flow named ' 'APTWorkshopAppflow'
+
+![image](images/appflow-created.png)
 
 ## Cleanup
 
