@@ -79,6 +79,18 @@ In this step, you will create a slack app by following below instuctions:
 
 ![image](images/slack-scopes.png)
 
+*   Note your client ID, client secret, and Slack instance name.  Client ID and Client secret can be found under 'App Credentials' section. 
+    Slack instance name is the workspace name that you have created.  
+
+![image](images/slack-client.png)
+
+
+   
+
+
+
+## Create a Slack App
+
 ## Cleanup
 
 At the end of every workshop, you may wish to clean up the stuff you have created so you do not incur additional costs.
