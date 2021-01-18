@@ -208,7 +208,7 @@ WHERE
 
 ![image](images/Quicksight-security.png)
 
-*   Check 'Amazon S3' and when prompted, check the buckets we created for AppFlow & Athena query results.
+*   Check 'Amazon S3' and when prompted, check the buckets we created for AppFlow & Athena query results. Remember to tick write permission to Athena group.
 
 ![image](images/Quicksight-s3.png)
 
