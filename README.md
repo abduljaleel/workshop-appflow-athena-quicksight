@@ -240,6 +240,13 @@ WHERE
 
 ![image](images/Quicksight-analysis.png)
 
+## Create Quicksight Charts
+
+*   On the Amazon QuickSight analysis page, choose visual type as 'Vertical bar chart'
+*   For X Axis, select 'ts' , For Value, use 'status' and for Group use 'Environment'
+*   This will produce a chart that shows 'Deployment Frequency by Environment' chart
+
+![image](images/Quicksight-chart1.png)
 
 ## Cleanup
 
