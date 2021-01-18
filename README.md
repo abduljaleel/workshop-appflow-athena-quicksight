@@ -221,10 +221,11 @@ WHERE
 *   On the Amazon QuickSight start page, choose Manage data.
 *   On the Datasets page, choose New data set.
 *   The Create a Data Set page displays.
-*   Scroll down to the FROM EXISTING DATA SOURCES section of the Create a Data Set page.
-*   Choose the connection profile icon for the existing data source you want to use. Connection profiles are labeled with the data source icon and the name provided by the person who created the connection.
-*   Choose the Create data set button to proceed.
-*   Amazon QuickSight creates a connection profile for this data source based only on the Athena workgroup. The database and table aren't saved.
+*   In the FROM NEW DATA SOURCES section, choose the Athena data source card.
+*   For Data source name, enter a descriptive name.
+*   For Athena workgroup, choose your workgroup.
+*   Choose Validate connection to test the connection.
+*   Choose Create data source.
 
 ## Cleanup
 
