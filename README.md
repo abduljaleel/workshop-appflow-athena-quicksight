@@ -122,7 +122,9 @@ In this step, you will create a slack app by following below instuctions:
 
 ![image](images/appflow-created.png)
 
-*   Go to Slack workspace and add few messages so that these messages can be analysed in Amazon Quicksight 
+*   Go to Slack workspace and add below messages so that these messages can be analysed with Amazon Quicksight 
+
+
 
 ## Run the Appflow
 
@@ -161,7 +163,11 @@ SELECT * FROM SLACK_DATA;
 ```
 ![image](images/athena-queryresults.png)
 
-In the last stage of the workshop,  we will analyse the data to create charts based on the contents of the Slack messages. 
+*   Create a new table called 'SLACK_DATA_ANALYSIS' by running below query
+
+In the last stage of the workshop,  we will analyse the data in the new table SLACK_DATA_ANALYSIS to create charts based on the contents of the Slack messages. 
+
+
 
 ## Cleanup
 
