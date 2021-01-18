@@ -37,6 +37,12 @@ These S3 buckets must be created prior to starting the workshop.  
 
 ![image](images/s3-datalake.png)
 
+You can leave all the fields as default and set some tags as best practice.  Select region as Sydney and you can use the same region across all other resources in this workshop. 
+
+### Create S3 Bucket for storing slack data
+
+![image](images/s3-athenaresults.png)
+
 ## Cleanup
 
 At the end of every workshop, you may wish to clean up the stuff you have created so you do not incur additional costs.
