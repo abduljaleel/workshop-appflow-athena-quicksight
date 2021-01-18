@@ -26,12 +26,14 @@ In this workshop, you will be integrating Slack with Amazon Appflow and transfer
 
 In Amazon Quicksight you will be analysing messages that are posted to Slack #general channel. You will mockup messages so that the messages will look like CI/CD pipeline deployment notifications.
 
+Note: Use ap-southeast-2 as region for all the resources in this workshop. 
+
 ## Preliminary Setup
 
 In this workshop, you will be using Amazon S3 buckets for below purposes:
 
 *   Datalake for storing Slack data
-*   Saving query results from Athena (This is a pre-requisite for using Athena)
+*   Saving Athena query results  
 
 These S3 buckets must be created prior to starting the workshop.  
 
@@ -39,15 +41,15 @@ These S3 buckets must be created prior to starting the workshop.  
 
 ![image](images/s3-datalake.png)
 
-You can leave all the fields as default and add some tags as best practice. Select region as Sydney and remember to use the same region across all other resources in this workshop.
+You can leave all the fields as default and add some tags as best practice.  
 
 ### Create S3 Bucket for saving Athena query results 
 
+Note: This bucket needs to be configured in Athena (under Settings) if you are accessing Athena for the first time. Do not create this bucket if you are already using Athena in the region (ap-southeast-2)
+
 ![image](images/s3-athenaresults.png)
 
-You can leave all the fields as default and add some tags as best practice. Select region as Sydney and remember to use the same region across all other resources in this workshop.
-
-Note:  This is optional step. This bucket needs to be configured in Athena (under Settings) if you are accessing Athena for the first time.
+You can leave all the fields as default and add some tags as best practice. 
 
 ![image](images/athena-settings.png)
 
