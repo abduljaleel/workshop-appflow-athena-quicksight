@@ -24,7 +24,7 @@ In this workshop, you will be integrating Slack with Amazon Appflow and transfer
 
 ![image](images/arch.png)
 
-You will be analysing messages that are created in Slack channel as part of CI/CD pipeline deployment notifications.
+You will be analysing messages that are posted to Slack #general channel. You will mockup messages that are related to CI/CD pipeline deployment notifications.
 
 ## Preliminary Setup
 
@@ -186,6 +186,7 @@ FROM
 WHERE
   text like '%Deploy%';
 ```
+This query will create a new table slack_data_analysis with new fields (evnironment, status) derived from the slack messages.
 
 *   Run a select query to view the contents of this new table
 
