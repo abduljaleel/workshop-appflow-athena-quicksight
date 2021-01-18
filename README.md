@@ -10,13 +10,13 @@
 
 ### AWS Account
 
-In order to complete this workshop, you’ll need access to an AWS account. Your access needs to have sufficient permissions to create resources in Appflow, Athena, S3 and Quicksight. If you currently don’t have an AWS account, you can create one ![here](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account)
+In order to complete this workshop, you’ll need access to an AWS account. Your access needs to have sufficient permissions to create resources in Appflow, Athena, S3 and Quicksight. If you currently don’t have an AWS account, you can create one [here](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account)
 
 ### Slack Account
 
 You'll need a slack account and a workspace to install the Slack app that we are creating as part of this workshop. You may not have Slack app install permissions for a workspace that you have joined unless the administrator has turned on the permissions. You can create a workspace which has permission to install a Slack app. 
 
-Once you have AWS & Slack accounts, you can start the workshop.
+If you do not have a Slack workspace, create a new workspace following instructions [here](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)
 
 ## Architecture
 
@@ -48,6 +48,8 @@ You can leave all the fields as default and add some tags as best practice.  Sel
 ### Verify the new S3 buckets
 
 ![image](images/s3-buckets.jpg)
+
+Once these S3 buckets are created, you are ready to start the workshop.
 
 ## Cleanup
 
