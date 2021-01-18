@@ -236,6 +236,7 @@ WHERE
 
 *   In the finish dataset creation screen, select 'Import to SPICE for quicker analytics'
 *   Click on 'Visualise'
+*   This will take you to Quicksight Analysis section 
 
 
 ## Cleanup
