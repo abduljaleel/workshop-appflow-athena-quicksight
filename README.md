@@ -111,6 +111,9 @@ In this step, you will create a slack app by following below instuctions:
 ![image](images/appflow-create.png)
 
 *   In the next screen, select 'All map all fields directly' from 'Source field name' dropdown under '**Source to destination field mapping'**
+
+![image](images/appflow-mapping.png)
+
 *   Skip the Filters selection in the next screen and click 'Next'
 *   Click 'Create flow' in the 'Review and Create' screen
 *   This will create the flow named ' 'APTWorkshopAppflow'
