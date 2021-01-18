@@ -150,11 +150,13 @@ Note: You can explore the data using Amazon Athena in the next section of the wo
 
 ## Query Data in S3
 
-*   In the Athena console, query new table created with below SQL
+*   In the Athena console, query the new table with below SQL to view the contents of the table
 
 ```sql
 SELECT * FROM SLACK_DATA;
 ```
+
+In the last stage of the workshop,  we will Athena console, query the new table with below SQL to view the contents of the table
 
 ## Cleanup
 
