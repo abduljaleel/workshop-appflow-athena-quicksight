@@ -170,7 +170,7 @@ SELECT * FROM SLACK_DATA;
 
 ![image](images/athena-queryresults.png)
 
-*   Create a new table called 'SLACK_DATA_ANALYSIS' by running below query. This table will be used for Amazon Quicksight analysis
+*   Create a new table called 'SLACK\_DATA\_ANALYSIS' by running below query. This table will be used for Amazon Quicksight analysis
 
 ```sql
 CREATE TABLE IF NOT EXISTS SLACK_DATA_ANALYSIS
@@ -183,17 +183,34 @@ WHERE
   text like '%Deploy%';
 ```
 
-*   Run a query to view contents of the new table
+*   Run a query to view the contents of this new table
 
 ![image](images/athena-newtable.png)
 
-*   In the last stage of the workshop,  you will analyse the data in table SLACK_DATA_ANALYSIS and create Amazon Quicksight charts.
+*   In the last stage of the workshop,  you will analyse the data in table SLACK\_DATA\_ANALYSIS and create Amazon Quicksight charts.
 
 ## Create Amazon Quicksight Charts
 
 ### Setting up your QuickSight Account
 
-If you.
+Go to your AWS console and search for QuickSight. You will first be presented with a screen to sign up:
+
+![alt text](https://github.com/mariojaspers/QuicksightAthena01/raw/master/images/signup.png)
+
+You can choose either Standard or Enterprise Edition (the main difference today is that Enterprise edition can hook up to Active Directory, though there will be more functionality in the future added to Enterprise Edition). For purposes of our lab today Standard Edition is fine. With both editions, you get one free user, forever.  
+ 
+
+![alt text](https://github.com/mariojaspers/QuicksightAthena01/raw/master/images/editions.png)
+
+  
+ 
+
+Next you will create and name for you account (you can name the account whatever you'd like) and a notification email address (set it to be your own email address). You will also see some prompts about enabling autodiscovery of your data in AWS sources, as well as access to Athena, S3 buckets, and S3 Storage analytics. Check all the boxes.  
+ 
+
+![alt text](https://github.com/mariojaspers/QuicksightAthena01/raw/master/images/signup_options.png)
+
+**Note - Make sure you launch QuickSight in the same region you have chosen for Athena (ap-southeast-2)**
 
 ## Cleanup
 
