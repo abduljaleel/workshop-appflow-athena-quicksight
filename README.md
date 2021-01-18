@@ -134,7 +134,7 @@ Note:  You can explore the data using Amazon Athena in the next section of the w
 *   Open the Amazon Athena console [here](https://console.aws.amazon.com/athena/)
 *   Click on 'Create Table' and select 'From S3 Bucket'
 
-![image](images/athena-tablecreate.png)
+![image](images/athena-createtable.png)
 
 *   In the next screen, choose a new database name and a table name 
 *   Type the S3 bucket name that you created in priliminary step
