@@ -108,6 +108,8 @@ Deploy to Production succeeded
 ```
 Note: As the format of the messages to be consistent, copy paste the messages to the channel.
 
+![image](images/slack-messages.png)
+
 ## Connect Slack to Appflow and Create the flow
 
 *   Open the Amazon AppFlow console [here](https://console.aws.amazon.com/appflow/)
