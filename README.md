@@ -28,7 +28,7 @@ In this workshop, you will be integrating Slack with Amazon Appflow and transfer
 
 In the workshop, you will be using Amazon S3 bucket for below purposes:
 
-*   Datalake for storing Slack data. 
+*   Datalake for storing Slack data.
 *   Saving query results from Athena (This is a pre-requisite for using Athena)
 
 These S3 buckets must be created prior to starting the workshop.  
@@ -37,13 +37,13 @@ These S3 buckets must be created prior to starting the workshop.  
 
 ![image](images/s3-datalake.png)
 
-You can leave all the fields as default and add some tags as best practice.  Select region as Sydney and remember to use the same region across all other resources in this workshop. 
+You can leave all the fields as default and add some tags as best practice. Select region as Sydney and remember to use the same region across all other resources in this workshop.
 
 ### Create S3 Bucket for saving Athena query results
 
 ![image](images/s3-athenaresults.png)
 
-You can leave all the fields as default and add some tags as best practice.  Select region as Sydney and remember to use the same region across all other resources in this workshop. 
+You can leave all the fields as default and add some tags as best practice. Select region as Sydney and remember to use the same region across all other resources in this workshop.
 
 ### Verify the new S3 buckets
 
@@ -55,16 +55,21 @@ Once these S3 buckets are created, you are ready to start the workshop.
 
 In this step, you will create a slack app by following below instuctions:
 
-- Sign in to your Slack workspace where you’d like to install the new app, or [create a new workspace](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)
-- Create a Slack app named 'APTWorkshopApp' from [here](https://api.slack.com/docs/sign-in-with-slack#sign-in-with-slack__details__create-your-slack-app-if-you-havent-already) 
+*   Sign in to your Slack workspace where you’d like to install the new app, or [create a new workspace](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)
+*   Create a Slack app named 'APTWorkshopApp' from [here](https://api.slack.com/docs/sign-in-with-slack#sign-in-with-slack__details__create-your-slack-app-if-you-havent-already)  
+     
+
 ![image](images/slack-app-new.png)
-Select the workspace where you want to install the app. 
-- After you create the app, in the navigation pane, under Features, choose OAuth & Permissions.
-- For Redirect URLs, enter 'https://ap-southeast-2.console.aws.amazon.com/appflow/oauth'
+
+*     
+    Select the workspace where you want to install the app.
+*   After you create the app, in the navigation pane, under Features, choose OAuth & Permissions.
+*   For Redirect URLs, enter _https://ap-southeast-2.console.aws.amazon.com/appflow/oauth_  
+     
+
 ![image](images/slack-oath.png)
 
-## Get Client ID, Client Secret 
-
+## Get Client ID, Client Secret
 
 ## Cleanup
 
