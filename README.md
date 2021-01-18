@@ -24,6 +24,19 @@ In this workshop, you will be integrating Slack with Amazon Appflow and transfer
 
 ![image](images/arch.png)
 
+## Preliminary Setup
+
+In the workshop, you will be using Amazon S3 bucket for below purposes:
+
+*   Datalake for storing Slack data. 
+*   Saving query results from Athena (This is a pre-requisite for using Athena)
+
+These S3 buckets must be created prior to starting the workshop.  
+
+### Create S3 Bucket for storing slack data
+
+![image](images/s3-datalake.png)
+
 ## Cleanup
 
-At the end of every workshop, you may wish to cleanup the stuff you have created so you do not incurr additional costs.
+At the end of every workshop, you may wish to clean up the stuff you have created so you do not incur additional costs.
