@@ -20,17 +20,17 @@ If you do not have a Slack workspace, create a new workspace following instructi
 
 ## Architecture
 
-In this workshop, you will be integrating Slack with Amazon Appflow and transferring data from Slack to S3 bucket.  In the next stage, create Amazon Athena table and query the data using SQL.  In the final stage of the workshop, you will be creating charts in Amazon Quicksight using Amazon Athena as a source for dataset.
+In this workshop, you will be integrating Slack with Amazon Appflow and transferring data from Slack to Amazon S3.  In the next stage of workshop, you will create Amazon Athena table and query the data using SQL.  In the final stage of the workshop, you will be creating charts in Amazon Quicksight using Amazon Athena as a source for dataset.
 
 ![image](images/arch.png)
 
-You will be analysing messages that are posted to Slack #general channel. You will mockup messages that are related to CI/CD pipeline deployment notifications.
+In Amazon Quicksight you will be analysing messages that are posted to Slack #general channel. You will mockup messages so that the messages will look like CI/CD pipeline deployment notifications.
 
 ## Preliminary Setup
 
-In this workshop, you will be using Amazon S3 bucket for below purposes:
+In this workshop, you will be using Amazon S3 buckets for below purposes:
 
-*   Datalake for storing Slack data.
+*   Datalake for storing Slack data
 *   Saving query results from Athena (This is a pre-requisite for using Athena)
 
 These S3 buckets must be created prior to starting the workshop.  
@@ -56,6 +56,8 @@ Note:  This is optional step. This bucket needs to be configured in Athena (unde
 ![image](images/s3-buckets.jpg)
 
 Once these S3 buckets are created, you are ready to start the workshop.
+
+Note :  In addition to the above two S3 buckets, as part of this workshop when you create a dataset using Athena, Amazon QuickSight creates another S3 bucket. By default, this bucket has a name similar to "aws-athena-query-results-<ACCOUNTID>-<REGION>". 
 
 ## Create and Install Slack App
 
