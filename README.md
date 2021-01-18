@@ -79,7 +79,7 @@ In this step, you will create a slack app by following below instuctions:
 ![image](images/slack-scopes.png)
 
 *   Note your client ID, client secret, and Slack instance name. Client ID and Client secret can be found under 'App Credentials' section.  
-    Slack instance name is the workspace name  
+    Slack instance name is the workspace name
 
 ![image](images/slack-client.png)
 
@@ -87,22 +87,25 @@ In this step, you will create a slack app by following below instuctions:
 
 ![image](images/slack-install.png)
 
-## Connect Slack and create Amazon Appflow
+## Connect Slack to Appflow and Create the flow
 
-*   Open the Amazon AppFlow console at 
+*   Open the Amazon AppFlow console at
 *   Choose **Create flow** named 'APTWorkshopAppflow'
-*   For **Flow details**, enter a name and description for the flow. Leave other fields as default. 
+*   For **Flow details**, enter a name and description for the flow. Leave other fields as default.
 *   Choose **Next**.
 *   Choose **Slack** from the **Source name** dropdown list.
 *   Choose **Connect** to open the **Connect to Slack**  box.
 *   Under **Client ID**, enter your Slack client ID.
 *   Under **Client secret**, enter your Slack client secret.
-*   Under **Workspace**, enter the name of your Slack instance  
+*   Under **Workspace**, enter the name of your Slack instance
 *   Under **Connection name**, specify a name for your connection.
 *   Choose **Continue**.
 *   You will be redirected to the Slack login page. When prompted, grant Amazon AppFlow permissions to access your Slack account.
 
 ![image](images/slack-connect.png)
+
+*   In the next screen, configure source (Slack) and destination (Amazon S3)
+*   Select the S3 bucket 'aptworkshop-datalake' from the list.  This bucket was created in the premilinary step.
 
 ## Cleanup
 
