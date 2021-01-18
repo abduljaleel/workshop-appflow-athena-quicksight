@@ -198,14 +198,14 @@ WHERE
 *   Choose **Standard.** To confirm, choose **Continue**.
 *   Enter a unique account name for QuickSight
 *   Enter a notification Email address
-*   Choose the AWS Region (ap-southeast-2) 
+*   Choose the AWS Region (ap-southeast-2)
 *   Review the choices you made, then choose **Finish**.
 *   To open QuickSight, choose **Go to QuickSight**.
 *   Click on Account icon on top right corner
 *   Select 'Manage Quicksight'
 *   Select 'Security & Permissions'
 *   Click on 'Add or Remove' under Quicksight access to AWS Services
-*   Check 'Amazon S3' and when prompted, check the buckets related to Athena 
+*   Check 'Amazon S3' and when prompted, check the buckets related to Athena
 *   Check 'Athena' box
 
 ## Cleanup
