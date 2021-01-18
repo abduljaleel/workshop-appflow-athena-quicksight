@@ -45,11 +45,11 @@ You can leave all the fields as default and add some tags as best practice.
 
 ### Create S3 Bucket for saving Athena query results 
 
-Note: This bucket needs to be configured in Athena (under Settings) if you are accessing Athena for the first time. Do not create this bucket if you are already using Athena in the region (ap-southeast-2)
-
 ![image](images/s3-athenaresults.png)
 
 You can leave all the fields as default and add some tags as best practice. 
+
+Note: This bucket needs to be configured in Athena (under Settings) if you are accessing Athena for the first time. Do not create this bucket if you are already using Athena in the region (ap-southeast-2)
 
 ![image](images/athena-settings.png)
 
