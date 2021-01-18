@@ -77,6 +77,8 @@ In this step, you will create a slack app by following below instuctions:
     *   mpim:history
     *   mpim:read
 
+![image](images/slack-scopes.png)
+
 ## Cleanup
 
 At the end of every workshop, you may wish to clean up the stuff you have created so you do not incur additional costs.
