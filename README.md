@@ -205,10 +205,15 @@ WHERE
 *   Select 'Manage Quicksight'
 *   Select 'Security & Permissions'
 *   Click on 'Add or Remove' under Quicksight access to AWS Services
+
 ![image](images/Quicksight-security.png)
-*   Check 'Amazon S3' and when prompted, check the buckets related to Athena
+
+*   Check 'Amazon S3' and when prompted, check the buckets we created for AppFlow & Athena query results.
+
 ![image](images/Quicksight-s3.png)
+
 *   Check 'Athena' box
+
 ![image](images/Quicksight-s3-athena.png)
 
 ## Cleanup
