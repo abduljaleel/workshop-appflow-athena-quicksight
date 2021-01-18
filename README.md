@@ -51,7 +51,7 @@ You can leave all the fields as default and add some tags as best practice. Sele
 
 Once these S3 buckets are created, you are ready to start the workshop.
 
-## Create a Slack App
+## Create and Install Slack App
 
 In this step, you will create a slack app by following below instuctions:
 
@@ -63,8 +63,7 @@ In this step, you will create a slack app by following below instuctions:
 *   Select the workspace where you want to install the app.
 *   After you create the app, in the navigation pane, under Features, choose OAuth & Permissions.
 *   For Redirect URLs, enter ap-southeast-2.console.aws.amazon.com/appflow/oauth and save.  
-     
-
+    
 ![image](images/slack-oath.png)
 
 *   Set the following user token scopes:
@@ -84,12 +83,11 @@ In this step, you will create a slack app by following below instuctions:
 
 ![image](images/slack-client.png)
 
-*   Install the new app to workspace from 'Install App' under settings 
+*   Install the new app to workspace from 'Install App' under settings. Click 'Allow' for the access permission notification during the installation.
    
 ![image](images/slack-install.png)
 
-
-## Create a Slack App
+## Connect Slack and create Amazon Appflow
 
 ## Cleanup
 
