@@ -14,13 +14,13 @@ In order to complete this workshop, you’ll need access to an AWS account. Your
 
 ### Slack Account
 
-You'll need a slack account and a workspace to install the Slack app that we are creating as part of this workshop. You may not have Slack app install permissions for a workspace that you have joined unless the administrator has turned on the permissions. So please have a workspace ready to install the Slack app. 
+You'll need a slack account and a workspace to install the Slack app that we are creating as part of this workshop. You may not have Slack app install permissions for a workspace that you have joined unless the administrator has turned on the permissions. You can create a workspace which has permission to install a Slack app. 
 
 Once you have AWS & Slack accounts, you can start the workshop.
 
 ## Architecture
 
-In this workshop, you will be integrating Slack with Amazon Appflow and transferring data from Slack to S3 bucket.  In the next stage, create Amazon Athena table and query the data using SQL.  In the final stage of the workshop, you will be creating charts in Amazon Quicksight.
+In this workshop, you will be integrating Slack with Amazon Appflow and transferring data from Slack to S3 bucket.  In the next stage, create Amazon Athena table and query the data using SQL.  In the final stage of the workshop, you will be creating charts in Amazon Quicksight using Amazon Athena as a source for dataset.
 
 ![image](images/arch.png)
 
@@ -37,13 +37,17 @@ These S3 buckets must be created prior to starting the workshop.  
 
 ![image](images/s3-datalake.png)
 
-You can leave all the fields as default and add some tags as best practice.  Select region as Sydney and you can use the same region across all other resources in this workshop. 
+You can leave all the fields as default and add some tags as best practice.  Select region as Sydney and remember to use the same region across all other resources in this workshop. 
 
 ### Create S3 Bucket for saving Athena query results
 
 ![image](images/s3-athenaresults.png)
 
-You can leave all the fields as default and add some tags as best practice.  Select region as Sydney and you can use the same region across all other resources in this workshop. 
+You can leave all the fields as default and add some tags as best practice.  Select region as Sydney and remember to use the same region across all other resources in this workshop. 
+
+### Verify the new S3 buckets
+
+![image](images/s3-buckets.png)
 
 ## Cleanup
 
