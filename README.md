@@ -24,6 +24,8 @@ In this workshop, you will be integrating Slack with Amazon Appflow and transfer
 
 ![image](images/arch.png)
 
+You will be analysing messages that are created in Slack channel as part of CI/CD pipeline deployment notifications. 
+
 ## Preliminary Setup
 
 In the workshop, you will be using Amazon S3 bucket for below purposes:
@@ -120,6 +122,8 @@ In this step, you will create a slack app by following below instuctions:
 
 ![image](images/appflow-created.png)
 
+*   Go to Slack workspace and add few messages so that these messages can be analysed in Amazon Quicksight 
+
 ## Run the Appflow
 
 *   Click on 'Run flow' to run the appflow you just created
@@ -155,8 +159,9 @@ Note: You can explore the data using Amazon Athena in the next section of the wo
 ```sql
 SELECT * FROM SLACK_DATA;
 ```
+![image](images/athena-queryresults.png)
 
-In the last stage of the workshop,  we will Athena console, query the new table with below SQL to view the contents of the table
+In the last stage of the workshop,  we will analyse the data to create charts based on the contents of the Slack messages. 
 
 ## Cleanup
 
