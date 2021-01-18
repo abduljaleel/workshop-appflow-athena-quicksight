@@ -47,7 +47,7 @@ You can leave all the fields as default and add some tags as best practice.  Sel
 
 ### Verify the new S3 buckets
 
-![image](images/s3-buckets.png)
+![image](images/s3-buckets.jpg)
 
 ## Cleanup
 
