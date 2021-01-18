@@ -191,26 +191,22 @@ WHERE
 
 ## Create Amazon Quicksight Charts
 
-### Setting up your QuickSight Account
+### Setting up your QuickSight 
 
-Go to your AWS console and search for QuickSight. You will first be presented with a screen to sign up:
-
-![alt text](https://github.com/mariojaspers/QuicksightAthena01/raw/master/images/signup.png)
-
-You can choose either Standard or Enterprise Edition (the main difference today is that Enterprise edition can hook up to Active Directory, though there will be more functionality in the future added to Enterprise Edition). For purposes of our lab today Standard Edition is fine. With both editions, you get one free user, forever.  
- 
-
-![alt text](https://github.com/mariojaspers/QuicksightAthena01/raw/master/images/editions.png)
-
-  
- 
-
-Next you will create and name for you account (you can name the account whatever you'd like) and a notification email address (set it to be your own email address). You will also see some prompts about enabling autodiscovery of your data in AWS sources, as well as access to Athena, S3 buckets, and S3 Storage analytics. Check all the boxes.  
- 
-
-![alt text](https://github.com/mariojaspers/QuicksightAthena01/raw/master/images/signup_options.png)
-
-**Note - Make sure you launch QuickSight in the same region you have chosen for Athena (ap-southeast-2)**
+*   Open QuickSight from [here](https://quicksight.aws.amazon.com/).  For first time users, you will be prompted to signup for Quicksight.   Your AWS account number is displayed for verification purposes.
+*   Choose to **Sign up for QuickSight**.
+*   Choose **Standard.** To confirm, choose **Continue**.
+*   Enter a unique account name for QuickSight
+*   Enter a notification Email address
+*   Choose the AWS Region (ap-southeast-2) 
+*   Review the choices you made, then choose **Finish**.
+*   To open QuickSight, choose **Go to QuickSight**.
+*   Click on Account icon on top right corner
+*   Select 'Manage Quicksight'
+*   Select 'Security & Permissions'
+*   Click on 'Add or Remove' under Quicksight access to AWS Services
+*   Check 'Amazon S3' and when prompted, check the buckets related to Athena 
+*   Check 'Athena' box
 
 ## Cleanup
 
