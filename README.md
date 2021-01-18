@@ -116,27 +116,27 @@ In this step, you will create a slack app by following below instuctions:
 
 *   Skip the Filters selection in the next screen and click 'Next'
 *   Click 'Create flow' in the 'Review and Create' screen
-*   This will create a new flow connecting Slack and S3 
+*   This will create a new flow connecting Slack and S3
 
 ![image](images/appflow-created.png)
 
 ## Run the Appflow
 
-*   Click on 'Run flow' to run the appflow you just created 
+*   Click on 'Run flow' to run the appflow you just created
 *   Once the flow is executed succesfully, data can be viewed from the S3 URL given in the notification window.
 
 ![image](images/appflow-result.png)
 
-Note:  You can explore the data using Amazon Athena in the next section of the workshop
+Note: You can explore the data using Amazon Athena in the next section of the workshop
 
-## Create Athena Table 
+## Create Athena Table
 
 *   Open the Amazon Athena console [here](https://console.aws.amazon.com/athena/)
 *   Click on 'Create Table' and select 'From S3 Bucket'
 
 ![image](images/athena-createtable.png)
 
-*   In the next screen, choose a new database name and a table name 
+*   In the next screen, choose a new database name and a table name
 *   Type the S3 bucket name that you created in priliminary step
 
 ![image](images/athena-s3bucket.png)
@@ -148,10 +148,13 @@ Note:  You can explore the data using Amazon Athena in the next section of the w
 
 *   In Step 4, skip the partition setup and click on 'Create Table'
 
-
 ## Query Data in S3
 
+*   In the Athena console, query new table created with below SQL
 
+```sql
+SELECT * FROM SLACK_DATA;
+```
 
 ## Cleanup
 
