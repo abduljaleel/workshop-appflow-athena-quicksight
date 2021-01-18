@@ -106,9 +106,7 @@ Deploy to Staging*** failed
 Deploy to Staging*** succeeded
 Deploy to Production succeeded
 ```
-Note: As the format of the messages to be consistent, copy paste the messages to the channel.
-
-![image](images/slack-messages.png)
+Note: As the format of the messages to be consistent, copy paste the messages to the channel. 
 
 ## Connect Slack to Appflow and Create the flow
 
