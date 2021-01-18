@@ -105,7 +105,7 @@ In this step, you will create a slack app by following below instuctions:
 ![image](images/slack-connect.png)
 
 *   In the next screen, configure source (Slack) and destination (Amazon S3)
-*   Select the S3 bucket 'aptworkshop-datalake' from the list.  This bucket was created in the premilinary step.
+*   Select the S3 bucket from the list.  Note : This bucket was created in the premilinary step.
 *   Leave the Flow Trigger option as 'run on demand'
 
 ![image](images/appflow-create.png)
@@ -116,7 +116,7 @@ In this step, you will create a slack app by following below instuctions:
 
 *   Skip the Filters selection in the next screen and click 'Next'
 *   Click 'Create flow' in the 'Review and Create' screen
-*   This will create the flow named ' 'APTWorkshopAppflow'
+*   This will create a new flow connecting Slack and S3 
 
 ![image](images/appflow-created.png)
 
@@ -132,6 +132,21 @@ Note:  You can explore the data using Amazon Athena in the next section of the w
 ## Create Athena Table 
 
 *   Open the Amazon Athena console [here](https://console.aws.amazon.com/athena/)
+*   Click on 'Create Table' and select 'From S3 Bucket'
+
+![image](images/athena-tablecreate.png)
+
+*   In the next screen, choose a new database name and a table name 
+*   Type the S3 bucket name that you created in priliminary step
+
+![image](images/athena-s3bucket.png)
+
+*   In Step 2, select JSON as the data format
+*   In Step 3, add user,text and ts fields manually (In real woerld use case, you can create the table using Amazon Glue to avoid the manual mapping of fields)
+
+![image](images/athena-columns.png)
+
+*   In Step 4, skip the partition setup and click on 'Create Table'
 
 
 ## Query Data in S3
