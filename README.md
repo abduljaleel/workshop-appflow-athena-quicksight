@@ -227,16 +227,18 @@ WHERE
 *   The Create a Data Set page displays.
 *   In the FROM NEW DATA SOURCES section, choose the Athena data source card.
 *   For Data source name, enter a descriptive name.
-*   For Athena workgroup, choose your workgroup.
+*   For Athena workgroup, choose primary workgroup (default).
 *   Choose Validate connection to test the connection.
-*   Choose Create data source
+*   Choose Create data source.
 *   In the Choose your table screen, select the Athena database and table.
 
 ![image](images/Quicksight-datasource.png)
 
 *   In the finish dataset creation screen, select 'Import to SPICE for quicker analytics'
 *   Click on 'Visualise'
-*   This will take you to Quicksight Analysis section 
+*   This will take you to Quicksight Analysis section where upon completion of data import you can view the status as 'completed'
+
+![image](images/Quicksight-analysis.png)
 
 
 ## Cleanup
