@@ -16,7 +16,7 @@ In order to complete this workshop, you’ll need access to an AWS account. Your
 
 You'll need a slack account and a workspace to install the Slack app that we are creating as part of this workshop. You may not have Slack app install permissions for a workspace that you have joined unless the administrator has turned on the permissions. You can create a workspace which has permission to install a Slack app. 
 
-If you do not have a Slack workspace, create a new workspace following instructions [here](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)
+If you do not have a Slack workspace, create a new workspace called 'apt-workshop-workspace' following instructions [here](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)
 
 ## Architecture
 
@@ -55,7 +55,7 @@ Once these S3 buckets are created, you are ready to start the workshop.
 
 In this step, you will create a slack app by following below instuctions:
 
-*   Sign in to your Slack workspace where you’d like to install the new app, or [create a new workspace](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)
+*   Sign in to your Slack workspace where you’d like to install the new app, or [create a new workspace](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace. Name the workspace as 'apt-workshop-workspace'. 
 *   Create a Slack app named 'APTWorkshopApp' from [here](https://api.slack.com/docs/sign-in-with-slack#sign-in-with-slack__details__create-your-slack-app-if-you-havent-already)
 
 ![image](images/slack-app-new.png)
@@ -80,13 +80,13 @@ In this step, you will create a slack app by following below instuctions:
 ![image](images/slack-scopes.png)
 
 *   Note your client ID, client secret, and Slack instance name.  Client ID and Client secret can be found under 'App Credentials' section. 
-    Slack instance name is the workspace name that you have created.  
+    Slack instance name is the workspace name (eg: apt-workshop-workspace.slack.com)  
 
 ![image](images/slack-client.png)
 
-
+*   Install the new app to workspace from 'Install App' under settings 
    
-
+![image](images/slack-install.png)
 
 
 ## Create a Slack App
