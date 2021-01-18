@@ -28,7 +28,7 @@ You will be analysing messages that are posted to Slack #general channel. You wi
 
 ## Preliminary Setup
 
-In the workshop, you will be using Amazon S3 bucket for below purposes:
+In this workshop, you will be using Amazon S3 bucket for below purposes:
 
 *   Datalake for storing Slack data.
 *   Saving query results from Athena (This is a pre-requisite for using Athena)
@@ -93,7 +93,7 @@ In this step, you will create a slack app by following below instuctions:
 
 ![image](images/slack-install.png)
 
-*   In the last stage of the workshop, you will be analysing the Slack messages with Amazon Quicksight.   Inorder to mock usecase (CI/CD deployment notification messages), post below messages in Slack workspace #general channel
+*   In the last stage of the workshop, you will be analysing the Slack messages with Amazon Quicksight.   Inorder to mock usecase (CI/CD deployment notification messages), post below messages in Slack workspace #general channel. 
 
 ```
 Deploy to Staging*** succeeded
@@ -102,6 +102,7 @@ Deploy to Staging*** failed
 Deploy to Staging*** succeeded
 Deploy to Production succeeded
 ```
+Note: As the format of the messages to be consistent, copy paste the messages to the channel.
 
 ## Connect Slack to Appflow and Create the flow
 
@@ -245,10 +246,27 @@ This query will create a new table slack_data_analysis with new fields (evnironm
 
 *   On the Amazon QuickSight analysis page, choose visual type as 'Vertical bar chart'
 *   For X Axis, select 'ts' , For Value, use 'status' and for Group use 'Environment'
-*   This will produce a chart that shows 'Deployment Frequency by Environment' chart
+*   This will produce a chart that shows 'Deployment Frequency by Environment' 
 
 ![image](images/Quicksight-chart1.png)
 
 ## Cleanup
 
-At the end of every workshop, you may wish to clean up the stuff you have created so you do not incur additional costs.
+At the end of every workshop, you may wish to clean up following resources you have created so you do not incur additional costs.
+
+*   S3 Buckets
+*   AppFlow flows
+*   Athena database and tables
+*   Quicksight Datasets, Analyses and Charts
+
+# Contributors
+
+- Abdul Jaleel
+- Paul Kukiel
+
+# References
+
+- [Connect Slack to Appflow](https://docs.aws.amazon.com/appflow/latest/userguide/slack.html)
+- [AppFlow Getting Started](https://docs.aws.amazon.com/appflow/latest/userguide/getting-started.html)
+- [Amazon Athena – Interactive SQL Queries for Data in Amazon S3](https://aws.amazon.com/blogs/aws/amazon-athena-interactive-sql-queries-for-data-in-amazon-s3)
+- [Amazon Quicksight Userguide](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
