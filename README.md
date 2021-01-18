@@ -41,11 +41,15 @@ These S3 buckets must be created prior to starting the workshop.  
 
 You can leave all the fields as default and add some tags as best practice. Select region as Sydney and remember to use the same region across all other resources in this workshop.
 
-### Create S3 Bucket for saving Athena query results
+### Create S3 Bucket for saving Athena query results 
 
 ![image](images/s3-athenaresults.png)
 
 You can leave all the fields as default and add some tags as best practice. Select region as Sydney and remember to use the same region across all other resources in this workshop.
+
+Note:  This is optional step. This bucket needs to be configured in Athena (under Settings) if you are accessing Athena for the first time.
+
+![image](images/athena-settings.png)
 
 ### Verify the new S3 buckets
 
@@ -225,7 +229,14 @@ WHERE
 *   For Data source name, enter a descriptive name.
 *   For Athena workgroup, choose your workgroup.
 *   Choose Validate connection to test the connection.
-*   Choose Create data source.
+*   Choose Create data source
+*   In the Choose your table screen, select the Athena database and table.
+
+![image](images/Quicksight-datasource.png)
+
+*   In the finish dataset creation screen, select 'Import to SPICE for quicker analytics'
+*   Click on 'Visualise'
+
 
 ## Cleanup
 
