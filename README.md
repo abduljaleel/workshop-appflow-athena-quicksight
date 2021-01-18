@@ -170,7 +170,7 @@ SELECT * FROM SLACK_DATA;
 
 ![image](images/athena-queryresults.png)
 
-*   Create a new table called 'SLACK\_DATA\_ANALYSIS' by running below query
+*   Create a new table called 'SLACK_DATA_ANALYSIS' by running below query
 
 ```sql
 CREATE TABLE IF NOT EXISTS SLACK_DATA_ANALYSIS
@@ -183,7 +183,11 @@ WHERE
   text like '%Deploy%';
 ```
 
-*   In the last stage of the workshop,  you will analyse the data in table SLACK\_DATA\_ANALYSIS and create Amazon Quicksight charts.
+*   Run a query to view contents of the new table
+
+![image](images/athena-newtable.png)
+
+*   In the last stage of the workshop,  you will analyse the data in table SLACK_DATA_ANALYSIS and create Amazon Quicksight charts.
 
 ## Cleanup
 
