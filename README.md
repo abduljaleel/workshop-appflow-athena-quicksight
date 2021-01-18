@@ -183,7 +183,7 @@ WHERE
   text like '%Deploy%';
 ```
 
-*   Run a query to view the contents of this new table
+*   Run a select query to view the contents of this new table
 
 ![image](images/athena-newtable.png)
 
@@ -205,11 +205,11 @@ WHERE
 *   Select 'Manage Quicksight'
 *   Select 'Security & Permissions'
 *   Click on 'Add or Remove' under Quicksight access to AWS Services
-![image](images/quicksight-security.png)
+![image](images/Quicksight-security.png)
 *   Check 'Amazon S3' and when prompted, check the buckets related to Athena
-![image](images/quicksight-s3.png)
+![image](images/Quicksight-s3.png)
 *   Check 'Athena' box
-![image](images/quicksight-s3-athena.png)
+![image](images/Quicksight-s3-athena.png)
 
 ## Cleanup
 
