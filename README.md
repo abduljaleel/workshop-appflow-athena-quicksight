@@ -57,10 +57,8 @@ In this step, you will create a slack app by following below instuctions:
 
 - Sign in to your Slack workspace where you’d like to install the new app, or [create a new workspace](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)
 - Create a Slack app named 'APTWorkshopApp' from [here](https://api.slack.com/docs/sign-in-with-slack#sign-in-with-slack__details__create-your-slack-app-if-you-havent-already) 
-![image](images/slack-app.png)
 ![image](images/slack-app-new.png)
 Select the workspace where you want to install the app. 
-- Create a Slack app named 'APTWorkshopApp' from [here](https://api.slack.com/docs/sign-in-with-slack#sign-in-with-slack__details__create-your-slack-app-if-you-havent-already) 
 - After you create the app, in the navigation pane, under Features, choose OAuth & Permissions.
 - For Redirect URLs, enter 'https://ap-southeast-2.console.aws.amazon.com/appflow/oauth'
 ![image](images/slack-oath.png)
