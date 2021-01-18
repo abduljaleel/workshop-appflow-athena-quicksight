@@ -10,7 +10,7 @@
 
 ### AWS Account
 
-In order to complete this workshop, you’ll need access to an AWS account. Your access needs to have sufficient permissions to create resources in Appflow, Athena, S3 and Quicksight. If you currently don’t have an AWS account, you can create one \[here\](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account)
+In order to complete this workshop, you’ll need access to an AWS account. Your access needs to have sufficient permissions to create resources in Appflow, Athena, S3 and Quicksight. If you currently don’t have an AWS account, you can create one ![here](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account)
 
 ### Slack Account
 
