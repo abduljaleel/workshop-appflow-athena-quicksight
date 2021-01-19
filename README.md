@@ -3,7 +3,7 @@
 ## Introduction to AWS Appflow, Athena and Quicksight
 
 *   Amazon AppFlow is a fully managed integration service that helps to transfer data between Software-as-a-Service (SaaS) applications like Salesforce, Marketo, Slack, and ServiceNow, and AWS services like Amazon S3 and Amazon Redshift, in just a few clicks.
-*   Amazon Athena is the Amazon Web Services (AWS) service that allows to directly query files stored in S3 using SQL.
+*   Amazon Athena is a serverless, interactive query service to query data and analyze big data in Amazon S3 using standard SQL.
 *   Amazon Quicksight is an AWS dashboarding service. It has a user-friendly drag and drop interface to create charts and full dashboards in less than an hour.
 
 ## Requirements
@@ -46,7 +46,7 @@ In this workshop, you will be using Amazon S3 buckets for below purposes:
 
 These S3 buckets must be created prior to starting the workshop.  
 
-### Create S3 Bucket for storing slack data
+### Create S3 Bucket for storing Slack data
 
 ![image](images/s3-datalake.png)
 
