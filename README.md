@@ -108,7 +108,7 @@ In this step, you will create a slack app by following below instuctions:
 
 *   In the last stage of the workshop, you will be analysing the Slack messages with Amazon Quicksight.   Inorder to mock usecase (CI/CD deployment notification messages), post below messages in Slack workspace #general channel.
 
-```
+```text
 Deploy to Staging*** succeeded
 Deploy to Production succeeded
 Deploy to Staging*** failed
@@ -118,7 +118,7 @@ Deploy to Staging*** succeeded
 Deploy to Production succeeded
 ```
 
-Note: As the format of the messages to be consistent, copy paste the messages to the channel.
+Note: As the format of the messages to be consistent, paste (as text) above messages to the #general channel.
 
 ![image](images/slack-messages.png)
 
