@@ -32,9 +32,10 @@ Note: Use ap-southeast-2 as region for all the resources in this workshop.
 
 *   Step 1: Preliminary Setup
 *   Step 2: Create and install a Slack App
-*   Step 3: Connect Slack to Appflow and Create the flow
-*   Step 4: Create Athena Table & Query data in S3
-*   Step 5: Create Amazon Quicksight Charts
+*   Step 3: Connect Slack to AppFlow and create a flow
+*   Step 4: Run the AppFlow
+*   Step 5: Create Athena Table & Query data in S3
+*   Step 6: Create Amazon Quicksight Charts
 
 ## Preliminary Setup
 
