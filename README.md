@@ -162,7 +162,7 @@ Note: As the format of the messages to be consistent, copy paste the messages to
 
 ![image](images/appflow-result.png)
 
-Note: You can explore the data using Amazon Athena in the next section of the workshop
+You can explore the data using Amazon Athena in the next step of the workshop
 
 ## Create Athena Table
 
