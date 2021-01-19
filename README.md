@@ -26,7 +26,7 @@ In this workshop, you will be integrating Slack with Amazon Appflow and transfer
 
 In Amazon Quicksight you will be analysing messages that are posted to Slack #general channel. You will mockup messages so that the messages will look like CI/CD pipeline deployment notifications.
 
-Note: Use ap-southeast-2 as region for all the resources in this workshop. 
+Note: Use ap-southeast-2 as region for all the resources in this workshop.
 
 ## Workshop Steps
 
@@ -42,7 +42,7 @@ Note: Use ap-southeast-2 as region for all the resources in this workshop.
 In this workshop, you will be using Amazon S3 buckets for below purposes:
 
 *   Datalake for storing Slack data
-*   Saving Athena query results  
+*   Saving Athena query results
 
 These S3 buckets must be created prior to starting the workshop.  
 
@@ -50,13 +50,13 @@ These S3 buckets must be created prior to starting the workshop.  
 
 ![image](images/s3-datalake.png)
 
-You can leave all the fields as default and add some tags as best practice.  
+You can leave all the fields as default and add some tags as best practice.
 
-### Create S3 Bucket for saving Athena query results 
+### Create S3 Bucket for saving Athena query results
 
 ![image](images/s3-athenaresults.png)
 
-You can leave all the fields as default and add some tags as best practice. 
+You can leave all the fields as default and add some tags as best practice.
 
 Note: This bucket needs to be configured in Athena (under Settings) if you are accessing Athena for the first time. Do not create this bucket if you are already using Athena in the region (ap-southeast-2)
 
@@ -68,20 +68,20 @@ Note: This bucket needs to be configured in Athena (under Settings) if you are a
 
 Once these S3 buckets are created, you are ready to start the workshop.
 
-Note :  In addition to the above two S3 buckets, as part of this workshop when you create a dataset using Athena, Amazon QuickSight creates another S3 bucket. By default, this bucket has a name similar to "aws-athena-query-results-<ACCOUNTID>-<REGION>". 
+Note : In addition to the above two S3 buckets, as part of this workshop when you create a dataset using Athena, Amazon QuickSight creates another S3 bucket. By default, this bucket has a name similar to "aws-athena-query-results--".
 
 ## Create and Install Slack App
 
 In this step, you will create a slack app by following below instuctions:
 
-*   Sign in to your Slack workspace where you’d like to install the new app, or [create a new workspace](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)  
+*   Sign in to your Slack workspace where you’d like to install the new app, or [create a new workspace](https://slack.com/intl/en-au/help/articles/206845317-Create-a-Slack-workspace)
 *   Create a Slack app from [here](https://api.slack.com/docs/sign-in-with-slack#sign-in-with-slack__details__create-your-slack-app-if-you-havent-already)
 
 ![image](images/slack-app-new.png)
 
 *   Select the workspace where you want to install the app.
 *   After you create the app, in the navigation pane, under Features, choose OAuth & Permissions.
-*   For Redirect URL, enter ap-southeast-2.console.aws.amazon.com/appflow/oauth and save.
+*   For Redirect URL, enter `https:////ap-southeast-2.console.aws.amazon.com/appflow/oauth` and save.
 
 ![image](images/slack-oath.png)
 
@@ -106,7 +106,7 @@ In this step, you will create a slack app by following below instuctions:
 
 ![image](images/slack-install.png)
 
-*   In the last stage of the workshop, you will be analysing the Slack messages with Amazon Quicksight.   Inorder to mock usecase (CI/CD deployment notification messages), post below messages in Slack workspace #general channel. 
+*   In the last stage of the workshop, you will be analysing the Slack messages with Amazon Quicksight.   Inorder to mock usecase (CI/CD deployment notification messages), post below messages in Slack workspace #general channel.
 
 ```
 Deploy to Staging*** succeeded
@@ -117,14 +117,15 @@ Deploy to Production succeeded
 Deploy to Staging*** succeeded
 Deploy to Production succeeded
 ```
-Note: As the format of the messages to be consistent, copy paste the messages to the channel. 
+
+Note: As the format of the messages to be consistent, copy paste the messages to the channel.
 
 ![image](images/slack-messages.png)
 
 ## Connect Slack to Appflow and Create the flow
 
 *   Open the Amazon AppFlow console [here](https://console.aws.amazon.com/appflow/)
-*   Choose **Create flow** name 
+*   Choose **Create flow** name
 *   For **Flow details**, enter a name and description for the flow. Leave other fields as default.
 *   Choose **Next**.
 *   Choose **Slack** from the **Source name** dropdown list.
@@ -192,7 +193,7 @@ SELECT * FROM SLACK_DATA;
 
 ![image](images/athena-queryresults.png)
 
-*   Create a new table called 'SLACK_DATA_ANALYSIS' by running below query. This table will be used for Amazon Quicksight analysis
+*   Create a new table called 'SLACK\_DATA\_ANALYSIS' by running below query. This table will be used for Amazon Quicksight analysis
 
 ```sql
 CREATE TABLE IF NOT EXISTS SLACK_DATA_ANALYSIS
@@ -204,13 +205,14 @@ FROM
 WHERE
   text like '%Deploy%';
 ```
-This query will create a new table slack_data_analysis with new fields (evnironment, status) derived from slack_data table.
+
+This query will create a new table slack\_data\_analysis with new fields (evnironment, status) derived from slack\_data table.
 
 *   Run a select query to view the contents of this new table
 
 ![image](images/athena-newtable.png)
 
-*   In the last stage of the workshop,  you will analyse the data in table SLACK_DATA_ANALYSIS and create Amazon Quicksight charts.
+*   In the last stage of the workshop,  you will analyse the data in table SLACK\_DATA\_ANALYSIS and create Amazon Quicksight charts.
 
 ## Create Amazon Quicksight Charts
 
@@ -235,7 +237,7 @@ This query will create a new table slack_data_analysis with new fields (evnironm
 
 ![image](images/Quicksight-s3.png)
 
-*   Check 'Athena' box and when prompted, verify the S3 access permissions in the previous step. 
+*   Check 'Athena' box and when prompted, verify the S3 access permissions in the previous step.
 
 ![image](images/Quicksight-s3-athena.png)
 
@@ -263,7 +265,7 @@ This query will create a new table slack_data_analysis with new fields (evnironm
 
 *   On the Amazon QuickSight analysis page, choose visual type as 'Vertical bar chart'
 *   For X Axis, select 'ts' , For Value, use 'status' and for Group use 'Environment'
-*   This will produce a chart that shows 'Deployment Frequency by Environment' 
+*   This will produce a chart that shows 'Deployment Frequency by Environment'
 
 ![image](images/Quicksight-chart1.png)
 
@@ -278,12 +280,12 @@ At the end of the workshop, you may wish to clean up following resources you hav
 
 # Contributors
 
-- Abdul Jaleel
-- Paul Kukiel
+*   Abdul Jaleel
+*   Paul Kukiel
 
 # References
 
-- [Connect Slack to Appflow](https://docs.aws.amazon.com/appflow/latest/userguide/slack.html)
-- [AppFlow Getting Started](https://docs.aws.amazon.com/appflow/latest/userguide/getting-started.html)
-- [Amazon Athena – Interactive SQL Queries for Data in Amazon S3](https://aws.amazon.com/blogs/aws/amazon-athena-interactive-sql-queries-for-data-in-amazon-s3)
-- [Amazon Quicksight Userguide](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
+*   [Connect Slack to Appflow](https://docs.aws.amazon.com/appflow/latest/userguide/slack.html)
+*   [AppFlow Getting Started](https://docs.aws.amazon.com/appflow/latest/userguide/getting-started.html)
+*   [Amazon Athena – Interactive SQL Queries for Data in Amazon S3](https://aws.amazon.com/blogs/aws/amazon-athena-interactive-sql-queries-for-data-in-amazon-s3)
+*   [Amazon Quicksight Userguide](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
