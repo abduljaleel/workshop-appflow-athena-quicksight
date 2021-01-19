@@ -203,7 +203,7 @@ SELECT
 FROM
   SLACK_DATA
 WHERE
-  text like '%Deploy%';
+  text like 'Deploy%';
 ```
 
 This query will create a new table slack\_data\_analysis with new fields (evnironment, status) derived from slack\_data table.
