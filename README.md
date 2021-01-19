@@ -28,6 +28,14 @@ In Amazon Quicksight you will be analysing messages that are posted to Slack #ge
 
 Note: Use ap-southeast-2 as region for all the resources in this workshop. 
 
+## Workshop Steps
+
+*   Step 1: Preliminary Setup
+*   Step 2: Create and install a Slack App
+*   Step 3: Connect Slack to Appflow and Create the flow
+*   Step 4: Create Athena Table & Query data in S3
+*   Step 5: Create Amazon Quicksight Charts
+
 ## Preliminary Setup
 
 In this workshop, you will be using Amazon S3 buckets for below purposes:
