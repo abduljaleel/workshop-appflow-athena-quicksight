@@ -81,7 +81,7 @@ In this step, you will create a slack app by following below instuctions:
 
 *   Select the workspace where you want to install the app.
 *   After you create the app, in the navigation pane, under Features, choose OAuth & Permissions.
-*   For Redirect URL, enter `https:////ap-southeast-2.console.aws.amazon.com/appflow/oauth` and save.
+*   For Redirect URL, enter `https://ap-southeast-2.console.aws.amazon.com/appflow/oauth` and save.
 
 ![image](images/slack-oath.png)
 
